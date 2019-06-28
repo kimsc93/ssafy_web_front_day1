@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/common.css">
+<style>
+	[type="email"]:hover{
+		background : orange;
+	}
+	/*모든 input요소의 배경을 blue로 변경하세요*/
+	/*모든 input요소중 focus를 갖은 요소의 배경을 blue로 변경하세요*/	
+	input:focus{
+		background : blue;
+	}
+	/*체크된 요소의 배경을 빨강으로*/
+	:checked+label{
+		background : red;
+	}
+</style>
+
+</head>
+<body>
+	<div>
+		div는 공간 분할 태그이다.
+		<p>css test</p>
+	</div>
+
+	<form action="#" method="get">
+		<fieldset>
+			<legend>색</legend>
+			<input type="color" name="color"><br>
+		</fieldset>
+		<fieldset>
+			<legend>날짜</legend>
+			<input type="date" name="date"><br>
+			<input type="month" name="month"><br>
+			<input type="week" name="week"><br>
+		</fieldset>
+		<fieldset>
+			<legend>숫자</legend>
+			<input type="number" name="number" min = "0" max="10" step="2"><br>
+			<label>만족도를 선택하세요.</label>
+			<input type="range" name="range" min="1" max="10" value="8"><br>
+		</fieldset>
+		<fieldset>
+			<legend>기타</legend>
+			<input type="search" name="search" readonly="readonly" value="test"><br>
+			<input type="email" name="email" required="required">
+			<input type="email" name="email2" disabled="disabled">		
+			<input type="submit">
+		</fieldset>		
+	</form>
+</body>
+
+</html>
